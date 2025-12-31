@@ -12,7 +12,7 @@ That's it! Docker handles everything else.
 
 ```bash
 # Navigate to project directory
-cd c:\Users\sanjh\Projects\Backend-in-a-box
+cd c:\Path\To\Backend-in-a-box
 
 # Generate models and APIs from YAML schemas
 python -m generator

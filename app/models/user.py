@@ -10,7 +10,7 @@ class User(Base):
     """SQLAlchemy model for User."""
     __tablename__ = "users"
 
-    id = Column(UUID, primary_key=True)
+    id = Column(UUID, primary_key=True, default=uuid.uuid4)
     email = Column(String(255), unique=True, nullable=False)
     password_hash = Column(String(255), nullable=False)
     full_name = Column(String(255))

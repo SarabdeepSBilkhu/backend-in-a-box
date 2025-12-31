@@ -43,6 +43,8 @@ class ModelGenerator:
         # Add constraints
         if field.primary:
             args.append("primary_key=True")
+            if field.type == "uuid":
+                args.append("default=uuid.uuid4")
         if field.unique:
             args.append("unique=True")
         if not field.nullable:

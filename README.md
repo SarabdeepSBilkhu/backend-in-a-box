@@ -1,21 +1,3 @@
-# Backend-in-a-Box
-
-**Schema-driven FastAPI backend generator - hackathon speed, production sanity**
-
-## 🎯 Philosophy
-
-This system exists to **eliminate backend setup**, not to explore frameworks.
-
-### Non-Negotiables
-
-- ✅ One command to run locally and deploy
-- ✅ Schema-first, code-second
-- ✅ Opinionated defaults, zero configuration drift
-- ✅ Extendable without modifying core
-- ✅ Hackathon speed, production sanity
-
-## 🚀 Quick Start
-
 ### 1. Install Dependencies
 
 ```bash

@@ -10,6 +10,10 @@ while ! pg_isready -h db -U postgres > /dev/null 2>&1; do
 done
 echo "✅ Database is ready"
 
+# Generate code from schema
+echo "🏗️  Generating backend code..."
+python -m generator
+
 # Run migrations
 echo "📦 Running database migrations..."
 python migrate.py upgrade

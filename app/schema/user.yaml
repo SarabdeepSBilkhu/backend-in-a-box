@@ -1,0 +1,30 @@
+name: User
+table: users
+fields:
+  id:
+    type: uuid
+    primary: true
+  email:
+    type: string
+    unique: true
+    required: true
+    nullable: false
+    max_length: 255
+  password_hash:
+    type: string
+    required: true
+    nullable: false
+    max_length: 255
+  full_name:
+    type: string
+    required: false
+    max_length: 255
+  is_active:
+    type: boolean
+    default: true
+  is_superuser:
+    type: boolean
+    default: false
+relations: []
+soft_delete: false
+timestamps: true
